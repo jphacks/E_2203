@@ -1,5 +1,7 @@
 package jp.ac.okinawa_ct.nitoc_ict.e_2203.data.repository
 
+import jp.ac.okinawa_ct.nitoc_ict.e_2203.data.Result
+
 /**
  * ユーザーのデータを操作するリポジトリ
  */

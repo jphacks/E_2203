@@ -1,6 +1,7 @@
 package jp.ac.okinawa_ct.nitoc_ict.e_2203.data.repository
 
 import jp.ac.okinawa_ct.nitoc_ict.e_2203.data.Situation
+import jp.ac.okinawa_ct.nitoc_ict.e_2203.data.Result
 
 /**
  * [Situation] の操作をするリポジトリ
