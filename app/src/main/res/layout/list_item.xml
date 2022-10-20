@@ -39,7 +39,7 @@
             android:text="GoogleMapで調べる"
             android:textSize="14sp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_marginBottom="10dp"
+            android:layout_marginBottom="10dp"
             app:layout_constraintEnd_toStartOf="@+id/button_2"
             app:layout_constraintHorizontal_bias="1"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -55,7 +55,7 @@
             android:text="cookpadで調べる"
             android:textSize="14sp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_marginBottom="10dp"
+            android:layout_marginBottom="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1"
             app:layout_constraintStart_toEndOf="@+id/button_1" />
