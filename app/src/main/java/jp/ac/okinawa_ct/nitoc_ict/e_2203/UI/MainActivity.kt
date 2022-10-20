@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(mapURL)
             startActivity(intent)
+            //サーバーへのフィードバックはこ↑こ↓から呼び出せば良いのでは？
         }
     }
 
@@ -64,5 +65,5 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
 
 }
 
-//コメント用コピペ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+//コピペ用米↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 //↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
