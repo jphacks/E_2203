@@ -40,10 +40,10 @@
                 android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif"
-                android:text="チーズ牛丼"
+                android:text="@string/food_name"
                 android:textAllCaps="false"
                 android:textColor="#E38C0B"
-                android:textSize="27sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -59,7 +59,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="GoogleMapで調べる"
+                    android:text="@string/left_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -75,7 +75,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="cookpadで調べる"
+                    android:text="@string/right_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -101,10 +101,10 @@
                 android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif"
-                android:text="チーズ牛丼"
+                android:text="@string/food_name"
                 android:textAllCaps="false"
                 android:textColor="#E38C0B"
-                android:textSize="27sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -120,7 +120,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="GoogleMapで調べる"
+                    android:text="@string/left_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -136,7 +136,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="cookpadで調べる"
+                    android:text="@string/right_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -162,10 +162,10 @@
                 android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif"
-                android:text="チーズ牛丼"
+                android:text="@string/food_name"
                 android:textAllCaps="false"
                 android:textColor="#E38C0B"
-                android:textSize="27sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -181,7 +181,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="GoogleMapで調べる"
+                    android:text="@string/left_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -197,7 +197,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="cookpadで調べる"
+                    android:text="@string/right_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -223,10 +223,10 @@
                 android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif"
-                android:text="チーズ牛丼"
+                android:text="@string/food_name"
                 android:textAllCaps="false"
                 android:textColor="#E38C0B"
-                android:textSize="27sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -242,7 +242,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="GoogleMapで調べる"
+                    android:text="@string/left_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -258,7 +258,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="cookpadで調べる"
+                    android:text="@string/right_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -284,10 +284,10 @@
                 android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif"
-                android:text="チーズ牛丼"
+                android:text="@string/food_name"
                 android:textAllCaps="false"
                 android:textColor="#E38C0B"
-                android:textSize="27sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -303,7 +303,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="GoogleMapで調べる"
+                    android:text="@string/left_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -319,7 +319,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="cookpadで調べる"
+                    android:text="@string/right_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -345,10 +345,10 @@
                 android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif"
-                android:text="チーズ牛丼"
+                android:text="@string/food_name"
                 android:textAllCaps="false"
                 android:textColor="#E38C0B"
-                android:textSize="27sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -364,7 +364,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="GoogleMapで調べる"
+                    android:text="@string/left_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -380,7 +380,7 @@
                     android:layout_height="52dp"
                     android:layout_weight="1"
                     android:backgroundTint="#FFB1A8"
-                    android:text="cookpadで調べる"
+                    android:text="@string/right_button"
                     android:textSize="14sp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="10dp"
@@ -389,6 +389,16 @@
                     app:layout_constraintStart_toEndOf="@+id/item6_button1" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
+
+        <Button
+            android:id="@+id/more_button"
+            style="@style/MaterialAlertDialog.Material3.Title.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:backgroundTint="#FFB583"
+            android:text="@string/more"
+            android:textSize="21sp" />
 
     </LinearLayout>
 
