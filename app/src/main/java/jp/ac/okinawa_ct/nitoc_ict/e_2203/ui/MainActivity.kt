@@ -1,4 +1,4 @@
-package jp.ac.okinawa_ct.nitoc_ict.e_2203.UI
+package jp.ac.okinawa_ct.nitoc_ict.e_2203.ui
 
 import android.content.Intent
 import android.net.Uri
@@ -8,26 +8,37 @@ import android.widget.Button
 import android.widget.TextView
 import jp.ac.okinawa_ct.nitoc_ict.e_2203.R
 import jp.ac.okinawa_ct.nitoc_ict.e_2203.data.Dish
+import jp.ac.okinawa_ct.nitoc_ict.e_2203.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() { //MainActivityクラス
+    private var _binding: ActivityMainBinding? = null
+    val binding: ActivityMainBinding get() = checkNotNull(_binding)
 
     override fun onCreate(savedInstanceState: Bundle?) { //アプリ起動時の処理
         super.onCreate(savedInstanceState)
+        _binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         setContentView(R.layout.activity_main)
 
-        //テスト用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+        //テスト用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+        val dummyDishList = listOf(
+            Dish("ハンバーグ", "https://www.google.com", "https://cookpad.com"),
+            Dish("カレーライス", "https://www.google.com", "https://cookpad.com"),
+            Dish("チャーハン", "https://www.google.com", "https://cookpad.com"),
+            Dish("ラーメン", "https://www.google.com", "https://cookpad.com"),
+            Dish("ビーフシチュー", "https://www.google.com", "https://cookpad.com"),
+            Dish("青椒肉絲", "https://www.google.com", "https://cookpad.com"),
+        )
 
-        val testval1 = findViewById<TextView>(R.id.item1_text)
-        val testval2 = findViewById<Button>(R.id.item1_button1)
-        val testval3 = findViewById<Button>(R.id.item1_button2)
-        val testval4_yjloc = "https://www.google.com/maps?client=firefox-b-d&q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E5%8C%97%E6%B2%A2%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%93%E2%88%92%EF%BC%91%EF%BC%94&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjUwrzAke76AhVQY94KHTWkDpUQ_AUoAXoECAIQAw"
-        val testval5_ohagi = "https://cookpad.com/dining/recipes/2762072"
-        val testval6_yjname = "野獣の照り焼き"
-        val testval7_yjdish = Dish(testval6_yjname, testval5_ohagi, testval4_yjloc)
-
-        setItemRoot(testval1, testval2, testval3, testval7_yjdish)
+        setItemRoot(
+            binding.item1Text,
+            binding.item1Button1,
+            binding.item1Button2,
+            dummyDishList[0]
+        )
 
         //テスト用↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
 
     }
 

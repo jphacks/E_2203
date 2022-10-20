@@ -1,4 +1,4 @@
-package layout
+package jp.ac.okinawa_ct.nitoc_ict.e_2203.ui
 
 import android.widget.Button
 import android.widget.TextView
