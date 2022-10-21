@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
         setContentView(binding.root)
         setContentView(R.layout.activity_main)
 
+        //val dishList: List<Dish> = *************** ← こ↑こ↓でデータ取得すればいいのでは？
+
         //テスト用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
         val dummyDishList = listOf(
             Dish("ハンバーグ", "https://www.google.com", "https://cookpad.com"),
@@ -29,8 +31,6 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
             Dish("ビーフシチュー", "https://www.google.com", "https://cookpad.com"),
             Dish("青椒肉絲", "https://www.google.com", "https://cookpad.com"),
         )
-
-        showList(dummyDishList)
 
         //setItemRoot(
         //    binding.item1Text,
@@ -48,6 +48,8 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
 
         //テスト用↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
+        showList(dummyDishList) //本来はdishListが引数
+
         val more_button = findViewById<Button>(R.id.more_button)
         more_button.setOnClickListener{
             val intent = Intent(this, SubActivity::class.java) //第２引数に移動したいActivity
@@ -58,9 +60,6 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
 
 
     }
-
-    //こ↑こ↓から書くーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-
 
     //Dishのメンバ（String）とViewの参照（インスタンス）を受け取り、反映させる関数2つ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
     fun setItemText(myTextView: TextView, name: String) { //Item*_text用
@@ -88,6 +87,45 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
 
 
     //Dishのリストを受け取り、リスト全体に対してsetItemRootを処理する関数↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+    fun showList(dishList: List<Dish>) {
+        setItemRoot(
+            findViewById<TextView>(R.id.item1_text),
+            findViewById<Button>(R.id.item1_button1),
+            findViewById<Button>(R.id.item1_button2),
+            dishList[0]
+        )
+        setItemRoot(
+            findViewById<TextView>(R.id.item2_text),
+            findViewById<Button>(R.id.item2_button1),
+            findViewById<Button>(R.id.item2_button2),
+            dishList[1]
+        )
+        setItemRoot(
+            findViewById<TextView>(R.id.item3_text),
+            findViewById<Button>(R.id.item3_button1),
+            findViewById<Button>(R.id.item3_button2),
+            dishList[2]
+        )
+        setItemRoot(
+            findViewById<TextView>(R.id.item4_text),
+            findViewById<Button>(R.id.item4_button1),
+            findViewById<Button>(R.id.item4_button2),
+            dishList[3]
+        )
+        setItemRoot(
+            findViewById<TextView>(R.id.item5_text),
+            findViewById<Button>(R.id.item5_button1),
+            findViewById<Button>(R.id.item5_button2),
+            dishList[4]
+        )
+        setItemRoot(
+            findViewById<TextView>(R.id.item6_text),
+            findViewById<Button>(R.id.item6_button1),
+            findViewById<Button>(R.id.item6_button2),
+            dishList[5]
+        )
+    }
+
     /*fun showList(dishList: List<Dish>) {
         setItemRoot( //1番目
             binding.item1Text,
@@ -127,44 +165,6 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
         )
     }
     */
-    fun showList(dishList: List<Dish>) {
-        setItemRoot(
-            findViewById<TextView>(R.id.item1_text),
-            findViewById<Button>(R.id.item1_button1),
-            findViewById<Button>(R.id.item1_button2),
-            dishList[0]
-        )
-        setItemRoot(
-            findViewById<TextView>(R.id.item2_text),
-            findViewById<Button>(R.id.item2_button1),
-            findViewById<Button>(R.id.item2_button2),
-            dishList[1]
-        )
-        setItemRoot(
-            findViewById<TextView>(R.id.item3_text),
-            findViewById<Button>(R.id.item3_button1),
-            findViewById<Button>(R.id.item3_button2),
-            dishList[2]
-        )
-        setItemRoot(
-            findViewById<TextView>(R.id.item4_text),
-            findViewById<Button>(R.id.item4_button1),
-            findViewById<Button>(R.id.item4_button2),
-            dishList[3]
-        )
-        setItemRoot(
-            findViewById<TextView>(R.id.item5_text),
-            findViewById<Button>(R.id.item5_button1),
-            findViewById<Button>(R.id.item5_button2),
-            dishList[4]
-        )
-        setItemRoot(
-            findViewById<TextView>(R.id.item6_text),
-            findViewById<Button>(R.id.item6_button1),
-            findViewById<Button>(R.id.item6_button2),
-            dishList[5]
-        )
-    }
     //Dishのリストを受け取り、リスト全体に対してsetItemRootを処理する関数↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
 }
