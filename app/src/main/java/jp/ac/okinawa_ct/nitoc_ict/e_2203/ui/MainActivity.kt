@@ -50,7 +50,6 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
 
         val more_button = findViewById<Button>(R.id.more_button)
         more_button.setOnClickListener{
-            more_button.text="今押しただろ、お前（半ギレ）" //クリックイベント確認用
             val intent = Intent(this, SubActivity::class.java) //第２引数に移動したいActivity
             startActivity(intent)
 
