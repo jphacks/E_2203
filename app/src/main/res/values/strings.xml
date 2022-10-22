@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">E_2203</string>
-    <string name="more">もっと見る</string>
-    <string name="food_name">とろ～り3種のチーズ牛丼</string>
-    <string name="left_button">GoogleMapで調べる</string>
-    <string name="right_button">cookpadで調べる</string>
+    <string name="more">もっと見る…</string>
+    <string name="food_name">―料理名―</string>
+    <string name="left_button">> GoogleMap</string>
+    <string name="right_button">> cookpad</string>
 </resources>

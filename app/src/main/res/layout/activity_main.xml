@@ -27,9 +27,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF1E0"
-            android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:background="#FFF8EF"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/item1_text"
@@ -42,8 +42,8 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/food_name"
                 android:textAllCaps="false"
-                android:textColor="#E38C0B"
-                android:textSize="26sp"
+                android:textColor="#B15E05"
+                android:textSize="27sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -58,15 +58,15 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#58D169"
                     android:text="@string/left_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toStartOf="@+id/item1_button2"
                     app:layout_constraintHorizontal_bias="1"
                     app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/item1_button2"
@@ -74,23 +74,23 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#F89A49"
                     android:text="@string/right_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1"
-                    app:layout_constraintStart_toEndOf="@+id/item1_button1" />
+                    app:layout_constraintStart_toEndOf="@+id/item1_button1"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF1E0"
-            android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:background="#FFF8EF"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/item2_text"
@@ -103,8 +103,8 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/food_name"
                 android:textAllCaps="false"
-                android:textColor="#E38C0B"
-                android:textSize="26sp"
+                android:textColor="#B15E05"
+                android:textSize="27sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -119,15 +119,15 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#58D169"
                     android:text="@string/left_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toStartOf="@+id/item2_button2"
                     app:layout_constraintHorizontal_bias="1"
                     app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/item2_button2"
@@ -135,23 +135,23 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#F89A49"
                     android:text="@string/right_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1"
-                    app:layout_constraintStart_toEndOf="@+id/item2_button1" />
+                    app:layout_constraintStart_toEndOf="@+id/item2_button1"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF1E0"
-            android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:background="#FFF8EF"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/item3_text"
@@ -164,8 +164,8 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/food_name"
                 android:textAllCaps="false"
-                android:textColor="#E38C0B"
-                android:textSize="26sp"
+                android:textColor="#B15E05"
+                android:textSize="27sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -180,15 +180,15 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#58D169"
                     android:text="@string/left_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toStartOf="@+id/item3_button2"
                     app:layout_constraintHorizontal_bias="1"
                     app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/item3_button2"
@@ -196,23 +196,23 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#F89A49"
                     android:text="@string/right_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1"
-                    app:layout_constraintStart_toEndOf="@+id/item3_button1" />
+                    app:layout_constraintStart_toEndOf="@+id/item3_button1"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF1E0"
-            android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:background="#FFF8EF"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/item4_text"
@@ -225,8 +225,8 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/food_name"
                 android:textAllCaps="false"
-                android:textColor="#E38C0B"
-                android:textSize="26sp"
+                android:textColor="#B15E05"
+                android:textSize="27sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -241,15 +241,15 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#58D169"
                     android:text="@string/left_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toStartOf="@+id/item4_button2"
                     app:layout_constraintHorizontal_bias="1"
                     app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/item4_button2"
@@ -257,23 +257,23 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#F89A49"
                     android:text="@string/right_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1"
-                    app:layout_constraintStart_toEndOf="@+id/item4_button1" />
+                    app:layout_constraintStart_toEndOf="@+id/item4_button1"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF1E0"
-            android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:background="#FFF8EF"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/item5_text"
@@ -286,8 +286,8 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/food_name"
                 android:textAllCaps="false"
-                android:textColor="#E38C0B"
-                android:textSize="26sp"
+                android:textColor="#B15E05"
+                android:textSize="27sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -302,15 +302,15 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#58D169"
                     android:text="@string/left_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toStartOf="@+id/item5_button2"
                     app:layout_constraintHorizontal_bias="1"
                     app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/item5_button2"
@@ -318,23 +318,23 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#F89A49"
                     android:text="@string/right_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1"
-                    app:layout_constraintStart_toEndOf="@+id/item5_button1" />
+                    app:layout_constraintStart_toEndOf="@+id/item5_button1"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF1E0"
-            android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:background="#FFF8EF"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/item6_text"
@@ -347,8 +347,8 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/food_name"
                 android:textAllCaps="false"
-                android:textColor="#E38C0B"
-                android:textSize="26sp"
+                android:textColor="#B15E05"
+                android:textSize="27sp"
                 android:textStyle="bold" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -363,15 +363,15 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#58D169"
                     android:text="@string/left_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toStartOf="@+id/item6_button2"
                     app:layout_constraintHorizontal_bias="1"
                     app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/item6_button2"
@@ -379,14 +379,14 @@
                     android:layout_width="180dp"
                     android:layout_height="52dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#FFB1A8"
+                    android:backgroundTint="#F89A49"
                     android:text="@string/right_button"
-                    android:textSize="14sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1"
-                    app:layout_constraintStart_toEndOf="@+id/item6_button1" />
+                    app:layout_constraintStart_toEndOf="@+id/item6_button1"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
@@ -396,9 +396,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="7dp"
-            android:backgroundTint="#FFB583"
+            android:backgroundTint="#FD9F88"
             android:text="@string/more"
-            android:textSize="21sp" />
+            android:textSize="22sp" />
 
     </LinearLayout>
 
