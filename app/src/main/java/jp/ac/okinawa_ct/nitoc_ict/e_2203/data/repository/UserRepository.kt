@@ -9,10 +9,10 @@ interface UserRepository {
     /**
      * UserのIDを取得するメソッド
      */
-    val userId: Flow<String?>
+    val userId: Flow<Int?>
 
     /**
      * UserのIDをストレージに上書きするメソッド
      */
-    suspend fun saveUserId(id: String)
+    suspend fun createUser()
 }
