@@ -14,7 +14,7 @@ interface DishRepository {
      * @param id        UserのID
      * @param situation 状況
      */
-    suspend fun getRecommendedDishList(id: String, situation: Situation): Result<List<Dish>>
+    suspend fun getRecommendedDishList(id: Int, situation: Situation): Result<List<Dish>>
 
     /**
      * 料理のリストを取得するメソッド
@@ -24,9 +24,10 @@ interface DishRepository {
     /**
      * 食べた料理を状況と一緒に送信するメソッド
      *
-     * @param id        UserのID
+     * @param userID        UserのID
      * @param situation 食べた時の[Situation]
      * @param dish      食べた[Dish]
      */
-    suspend fun sendAteDish(id: String, situation: Situation, dish: Dish): Result<Nothing>
+    suspend fun sendAteDish(userID: Int, situation: Situation, dish: Dish): Result<Nothing?>
 }
+

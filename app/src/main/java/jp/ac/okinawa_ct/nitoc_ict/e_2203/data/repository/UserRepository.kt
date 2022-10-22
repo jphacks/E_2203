@@ -1,6 +1,6 @@
 package jp.ac.okinawa_ct.nitoc_ict.e_2203.data.repository
 
-import jp.ac.okinawa_ct.nitoc_ict.e_2203.data.Result
+import kotlinx.coroutines.flow.Flow
 
 /**
  * ユーザーのデータを操作するリポジトリ
@@ -9,10 +9,10 @@ interface UserRepository {
     /**
      * UserのIDを取得するメソッド
      */
-    suspend fun getUserId(): Result<String>
+    val userId: Flow<String?>
 
     /**
      * UserのIDをストレージに上書きするメソッド
      */
-    suspend fun updateUserId(id: String): Result<String>
+    suspend fun saveUserId(id: String)
 }
