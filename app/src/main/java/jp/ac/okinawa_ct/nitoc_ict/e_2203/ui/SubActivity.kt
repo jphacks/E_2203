@@ -1,11 +1,7 @@
 package jp.ac.okinawa_ct.nitoc_ict.e_2203.ui
 
-//import android.content.Intent
-//import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-//import android.widget.Button
-//import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import jp.ac.okinawa_ct.nitoc_ict.e_2203.R
@@ -19,7 +15,9 @@ class SubActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sub)
 
-        //テスト用（本来ならdishListに本物データを入れる）↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+        // [記述.2] データの参照------ val dishList: List<Dish> = *おすすめだけでない全ての料理*
+
+        //[削除.2]テスト用（削除してください）↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
         val dishList = listOf(
             Dish("ハンバーグ", "https://www.google.com", "https://cookpad.com"),
             Dish("カレーライス", "https://www.google.com", "https://cookpad.com"),
@@ -34,7 +32,7 @@ class SubActivity : AppCompatActivity() {
             Dish("ビーフシチュー", "https://www.google.com", "https://cookpad.com"),
             Dish("青椒肉絲", "https://www.google.com", "https://cookpad.com"),
         )
-        //テスト用（本来ならdishListに本物データを入れる）↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+        //[削除.2]テスト用（削除してください）↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
         recyclerView = findViewById(R.id.rv)
         recyclerView.adapter = RecyclerAdapter(this, dishList)
@@ -42,6 +40,3 @@ class SubActivity : AppCompatActivity() {
 
     }
 }
-
-//コピペ用米↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-//↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑

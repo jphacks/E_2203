@@ -20,10 +20,10 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
         setContentView(binding.root)
         setContentView(R.layout.activity_main)
 
-        //val dishList: List<Dish> = *************** ← こ↑こ↓でデータ取得すればいいのでは？
+        // [記述.1] データの参照------ val dishList: List<Dish> = *おすすめされた料理６つ*
 
-        //テスト用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-        val dummyDishList = listOf(
+        //[削除.1]テスト用（削除してください）↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+        val dishList = listOf(
             Dish("ハンバーグ", "https://www.google.com", "https://cookpad.com"),
             Dish("カレーライス", "https://www.google.com", "https://cookpad.com"),
             Dish("チャーハン", "https://www.google.com", "https://cookpad.com"),
@@ -31,47 +31,30 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
             Dish("ビーフシチュー", "https://www.google.com", "https://cookpad.com"),
             Dish("青椒肉絲", "https://www.google.com", "https://cookpad.com"),
         )
+        //[削除.1]テスト用（削除してください）↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
-        //setItemRoot(
-        //    binding.item1Text,
-        //    binding.item1Button1,
-        //    binding.item1Button2,
-        //    dummyDishList[0]
-        //)
-
-        /*setItemRoot(
-            findViewById<TextView>(R.id.item1_text),
-            findViewById<Button>(R.id.item1_button1),
-            findViewById<Button>(R.id.item1_button2),
-            dummyDishList[0]
-        )*/
-
-        //テスト用↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
-
-        showList(dummyDishList) //本来はdishListが引数
+        showList(dishList) //リストにデータを反映
 
         val more_button = findViewById<Button>(R.id.more_button)
-        more_button.setOnClickListener{
-            val intent = Intent(this, SubActivity::class.java) //第２引数に移動したいActivity
+        more_button.setOnClickListener{ //SubActivityへ切り替え
+            val intent = Intent(this, SubActivity::class.java)
             startActivity(intent)
-
-            //画面変遷の処理を記述
         }
 
 
     }
 
     //Dishのメンバ（String）とViewの参照（インスタンス）を受け取り、反映させる関数2つ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-    fun setItemText(myTextView: TextView, name: String) { //Item*_text用
+    fun setItemText(myTextView: TextView, name: String) { //text用
         myTextView.text = name
     }
 
-    fun setItemButton(myButton: Button, mapURL: String) { //Item*_button1とItem*_button2用
+    fun setItemButton(myButton: Button, mapURL: String) { //左右のbutton用
         myButton.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(mapURL)
             startActivity(intent)
-            //サーバーへのフィードバックはこ↑こ↓から呼び出せば良いのでは？
+            // [記述.3] サーバーへのフィードバック呼び出し------ **
         }
     }
     //Dishのメンバ（String）とViewの参照（インスタンス）を受け取り、反映させる関数2つ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
@@ -125,49 +108,6 @@ class MainActivity : AppCompatActivity() { //MainActivityクラス
             dishList[5]
         )
     }
-
-    /*fun showList(dishList: List<Dish>) {
-        setItemRoot( //1番目
-            binding.item1Text,
-            binding.item1Button1,
-            binding.item1Button2,
-            dishList[0]
-        )
-        setItemRoot( //2番目
-            binding.item2Text,
-            binding.item2Button1,
-            binding.item2Button2,
-            dishList[1]
-        )
-        setItemRoot( //3番目
-            binding.item3Text,
-            binding.item3Button1,
-            binding.item3Button2,
-            dishList[2]
-        )
-        setItemRoot( //4番目
-            binding.item4Text,
-            binding.item4Button1,
-            binding.item4Button2,
-            dishList[3]
-        )
-        setItemRoot( //5番目
-            binding.item5Text,
-            binding.item5Button1,
-            binding.item5Button2,
-            dishList[4]
-        )
-        setItemRoot( //6番目
-            binding.item6Text,
-            binding.item6Button1,
-            binding.item6Button2,
-            dishList[5]
-        )
-    }
-    */
     //Dishのリストを受け取り、リスト全体に対してsetItemRootを処理する関数↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
 }
-
-//コピペ用米↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-//↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
